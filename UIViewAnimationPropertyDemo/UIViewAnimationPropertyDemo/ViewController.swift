@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     func tap(_ sender: UITapGestureRecognizer) {
         
         if self.launchingAnimator == nil {
-            self.launchingAnimator = UIViewPropertyAnimator(duration: 8.0, curve: .easeIn, animations: {
+            self.launchingAnimator = UIViewPropertyAnimator(duration: 3.0, curve: .easeIn, animations: {
                 self.rocketBottomConstraint.constant = self.view.bounds.height
                 self.view.layoutIfNeeded()
             })
